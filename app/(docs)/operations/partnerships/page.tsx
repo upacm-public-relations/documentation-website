@@ -1,11 +1,12 @@
 import { PageHeader } from "@/components/doc-components/PageHeader";
 import { Callout } from "@/components/doc-components/Callout";
+import Link from "next/link";
 
 const workflowSteps = [
   {
     step: 1,
     title: "Initial Contact",
-    desc: "Partner or sponsor reaches out via email or referral. Log the inquiry in the partnership tracker.",
+    desc: "An organization reaches out via email or referral.",
   },
   {
     step: 2,
@@ -14,25 +15,26 @@ const workflowSteps = [
   },
   {
     step: 3,
-    title: "Internal Deliberation",
-    desc: "Present to the Executive Board if needed. Get approval from relevant parties before responding.",
+    title: "Internal Deliberation (optional)",
+    desc: "Present to the Executive Board or PubRel Team if needed. Get approval from relevant parties before responding (optional).",
   },
   {
     step: 4,
-    title: "Draft & Send Proposal",
-    desc: "Use the Partnership Response Automation system or draft a formal response. Include partnership terms.",
+    title: "Draft & Send Response",
+    desc: "Either reject, accept, or clarify the partnership proposals. Clarify if you want to negotiate or benefits/responsibilities are unclear",
   },
   {
     step: 5,
-    title: "Agreement & Onboarding",
-    desc: "Finalize MOU or agreement. Add partner to the database and begin onboarding into UP ACM events.",
+    title: "Agreement",
+    desc: "Once an organization sends their MOA, read them and accept them (or clarify if needed). You may change their email label.",
   },
   {
     step: 6,
     title: "Ongoing Management",
-    desc: "Maintain regular check-ins. Document milestones and update partnership status in the tracking sheet.",
+    desc: "Maintain regular check-ins and update partnership tracker/s if present. Reply them back if the responsibilities on our side is done.",
   },
 ];
+const linkClass = "text-[#2D9CDB] hover:underline transition-colors"
 
 export default function PartnershipsWorkflowPage() {
   return (
@@ -47,9 +49,19 @@ export default function PartnershipsWorkflowPage() {
         description="Step-by-step guide for managing partnership and sponsorship processes"
       />
 
+      {/* <Callout type="info" title="Tip" className="mb-8">
+        You may use either UP ACM Proposal Reviewer Gem or GMail Add-On Proposal Reviewer to speed up assessing proposals and drafting responses to them. Please see the Automation Projects section for setup instructions.
+      </Callout> */}
       <Callout type="info" title="Tip" className="mb-8">
-        Use the Partnership Response Automation project to speed up drafting responses to partnership
-        proposals. See the Automation Projects section for setup instructions.
+        You may use either{" "}
+        <Link href="/operations/automation/proposal-reviewer" className={linkClass}>
+          UP ACM Proposal Reviewer Gem
+        </Link>{" "}
+        or{" "}
+        <Link href="/operations/automation/gemini" className={linkClass}>
+          GMail Add-On Proposal Reviewer
+        </Link>{" "}
+        to speed up assessing proposals and drafting responses to them. Please see the Automation Projects section for setup instructions.
       </Callout>
 
       <div className="space-y-4 mb-10">
@@ -88,10 +100,16 @@ export default function PartnershipsWorkflowPage() {
           Partnership Criteria
         </h2>
         <div className="space-y-2 text-sm" style={{ color: "var(--muted-foreground)" }}>
-          <p className="italic">
-            Placeholder — Add partnership evaluation criteria here (e.g., alignment with ACM values,
-            mutual benefit, capacity to deliver, reputation).
-          </p>
+        <p className="italic">
+          Please refer to the{" "}
+          <Link
+            href="/operations/automation/proposal-reviewer"
+            className="text-[#2D9CDB] hover:text-[#0B1F3B] hover:underline transition-colors"
+          >
+            UP ACM Proposal Reviewer Gem
+          </Link>{" "}
+          Instructions for partnership evaluation criteria. You may also update them.
+        </p>
         </div>
       </div>
     </div>
