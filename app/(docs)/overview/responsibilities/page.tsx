@@ -1,21 +1,21 @@
 import { PageHeader } from "@/components/doc-components/PageHeader";
 import { Callout } from "@/components/doc-components/Callout";
-import { Users, Mail, Lightbulb, Target } from "lucide-react";
+import { Calendar, UsersRound, Camera, Globe, CalendarDays, Database, Settings } from "lucide-react";
 
 const responsibilities = [
   {
-    icon: Mail,
+    icon: Calendar,
     title: "On Start of the Semester:",
-    accent: "#2D9CDB",
+    accent: "#EF476F",
     items: [
       "Inform other organizations about the new Chairperson",
       "Send UP Org form and Organization database updates",
     ],
   },
   {
-    icon: Users,
+    icon: UsersRound,
     title: "On Executive Matters:",
-    accent: "#2D9CDB",
+    accent: "#F78C6B",
     items: [
       "Be a part of the EASL group and chat (check email)",
       "Attend the EASL General Assembly (when the sem starts)",
@@ -23,23 +23,68 @@ const responsibilities = [
     ],
   },
   {
-    icon: Mail,
+    icon: Camera,
     title: "On Media:",
-    accent: "#F4C542",
+    accent: "#FFD166",
     items: [
       "Answer FB Page queries",
       "Create captions per publication materials",
     ],
   },
   {
-    icon: Target,
-    title: "Institutional Knowledge",
-    accent: "#2D9CDB",
+    icon: Globe,
+    title: "On Organizations:",
+    accent: "#06D6A0",
     items: [
-      "Document committee operations for future PR Heads",
-      "Conduct retrospectives at end of each academic year",
-      "Maintain SWOT analysis and strategic planning records",
-      "Preserve institutional relationships with ACM chapters",
+      "Search for and post monthly announcements and opportunities",
+      "Be UP ACM’s contact for ACM local Chapters (admin of the channel/chat)",
+    ],
+  },
+  {
+    icon: CalendarDays,
+    title: "On Events:",
+    accent: "#118AB2",
+    items: [
+      "Send partnership proposals and do follow ups per event",
+      {
+        text: "Oversee communications for:",
+        subItems: [
+          "Algolympics",
+          "EAP/Scratch Code Camp",
+          "Jumpstart/Hodgepodge",
+          "ACM Fest",
+          "Haxxor",
+        ],
+      },    
+    ],
+  },
+  {
+    icon: Database,
+    title: "On Updating and Maintaining Databases",
+    accent: "#6C63FF",
+    items: [
+      "Alumni",
+      "UP and outside UP Organizations",
+      "ACM Local Chapters",
+      "Media Sponsors",
+    ],
+  },
+  {
+    icon: Settings,
+    title: "On Institutional Knowledge and Internal Tools",
+    accent: "#9B5DE5",
+    items: [
+      {
+        text: "Oversee and maintain internal tools:",
+        subItems: [
+          "GMail Add-On Proposal Reviewer",
+          "UP ACM Proposal Reviewer Gem",
+          "Partnership Response Automation",
+          "UP ACM PubRel Email Blaster",
+          "UP ACM PubRel Documentation Website",
+        ],
+      },  
+      "Document committee operations for future PubRel Heads",  
     ],
   },
 ];
@@ -79,11 +124,49 @@ export default function ResponsibilitiesPage() {
                   {r.title}
                 </h3>
               </div>
-              <ul className="space-y-2">
+              {/* <ul className="space-y-2">
                 {r.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "var(--muted-foreground)" }}>
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0" style={{ background: r.accent }} />
                     {item}
+                  </li>
+                ))}
+              </ul> */}
+              <ul className="space-y-2">
+                {r.items.map((item, i) => (
+                  <li
+                    key={i}
+                    className="text-sm"
+                    style={{ color: "var(--muted-foreground)" }}
+                  >
+                    <div className="flex items-start gap-2">
+                      <span
+                        className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0"
+                        style={{ background: r.accent }}
+                      />
+
+                      <span>
+                        {typeof item === "string" ? item : item.text}
+                      </span>
+                    </div>
+
+                    {typeof item !== "string" && item.subItems && (
+                      <ul className="mt-2 ml-6 space-y-1">
+                        {item.subItems.map((subItem, j) => (
+                          <li
+                            key={j}
+                            className="flex items-start gap-2 text-xs"
+                          >
+                            <span
+                              className="mt-1.5 h-1 w-1 rounded-full shrink-0"
+                              style={{ background: r.accent }}
+                            />
+
+                            <span>{subItem}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -33,10 +33,10 @@ const quickAccessCards = [
 ];
 
 const recentUpdates = [
-  { title: "PubRel Documentation Website", date: "May 2026", badge: "Ongoing" },
+  { title: "UP ACM PubRel Documentation Website", date: "May 2026", badge: "Ongoing" },
   { title: "Partnership Response Automation", date: "May 2026", badge: "Active" },
-  { title: "Gemini Add-on", date: "April 2026", badge: "Active" },
-  { title: "Email Blast System", date: "April 2026", badge: "Active" },
+  { title: "UP ACM PubRel Email Blaster", date: "April 2026", badge: "Active" },
+  { title: "GMail Add-On Proposal Reviewer", date: "April 2026", badge: "Active" },
 ];
 
 const onboardingSteps = [
