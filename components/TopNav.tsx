@@ -28,6 +28,7 @@ export function TopNav({ onMenuClick }: TopNavProps) {
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
+            {/* // add image
             <div
               className="h-9 w-9 rounded-full flex items-center justify-center text-xs font-bold"
               style={{ background: "#0B1F3B", color: "#ffffff" }}
@@ -39,11 +40,16 @@ export function TopNav({ onMenuClick }: TopNavProps) {
               style={{ background: "#2D9CDB", color: "#ffffff" }}
             >
               ACM
-            </div>
+            </div> */}
+              <img
+                src="/logo.svg"
+                alt="UP ACM Logo"
+                className="h-10 w-10 object-contain"
+              />
           </div>
           <div className="hidden md:block border-l pl-3 h-8 flex flex-col justify-center" style={{ borderColor: "var(--border)" }}>
             <div className="text-sm font-semibold leading-tight" style={{ color: "var(--muted-foreground)" }}>
-              Public Relations
+              UP ACM Public Relations
             </div>
             <div className="text-xs leading-tight" style={{ color: "var(--muted-foreground)" }}>
               Internal Documentation
@@ -92,7 +98,7 @@ export function TopNav({ onMenuClick }: TopNavProps) {
             />
             <Moon
               className="absolute top-2 left-2 h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-              style={{ color: "var(--foreground)" }}
+              style={{ color: "var(--muted-foreground)" }}
             />
           </button>
         </div>
