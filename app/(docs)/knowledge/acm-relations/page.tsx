@@ -23,25 +23,7 @@ export default function ACMRelationsPage() {
             Relationship Overview
           </h2>
           <p className="text-sm mb-3" style={{ color: "var(--muted-foreground)" }}>
-            Placeholder — Describe UP ACM&apos;s relationship with ACM International here.
-            Include membership status, reporting structure, and any obligations.
-          </p>
-        </div>
-
-        <Callout type="info" title="ACM Membership">
-          Placeholder — Add information about UP ACM&apos;s ACM student chapter membership,
-          dues, and renewal process.
-        </Callout>
-
-        <div
-          className="rounded-xl p-6"
-          style={{ background: "var(--card)", border: "1px solid var(--border)" }}
-        >
-          <h2 className="font-semibold mb-3" style={{ color: "var(--foreground)" }}>
-            Key Contacts at ACM
-          </h2>
-          <p className="text-sm italic" style={{ color: "var(--muted-foreground)" }}>
-            Placeholder — Add ACM international contacts, regional coordinators, and other key relationships.
+          Membership status of the organization to its international counterpart is being checked by the head. He ensured that the contact details of the Chairperson and the organization are informed about the events of the ACM.
           </p>
         </div>
       </div>

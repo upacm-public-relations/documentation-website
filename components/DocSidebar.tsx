@@ -53,9 +53,9 @@ const navItems: NavItem[] = [
     title: "Institutional Knowledge",
     icon: BookOpen,
     items: [
-      { title: "Retrospectives (2425)", icon: MessageSquare, href: "/knowledge/retrospectives" },
+      { title: "Retrospectives (2526)", icon: MessageSquare, href: "/knowledge/retrospectives" },
       { title: "SWOT Analysis", icon: BarChart3, href: "/knowledge/swot" },
-      { title: "Backlogs (PubRel 2025)", icon: FileText, href: "/knowledge/backlogs" },
+      { title: "Backlogs (PubRel 2026)", icon: FileText, href: "/knowledge/backlogs" },
       { title: "ACM Local Chapter Partners", icon: Users, href: "/knowledge/partners" },
       { title: "UP ACM to ACM Relations", icon: LinkIcon, href: "/knowledge/acm-relations" },
     ],
