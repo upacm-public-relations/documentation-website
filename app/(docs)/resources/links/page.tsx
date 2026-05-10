@@ -2,14 +2,16 @@ import { PageHeader } from "@/components/doc-components/PageHeader";
 import { Callout } from "@/components/doc-components/Callout";
 import { ExternalLink } from "lucide-react";
 
-// ✏️ ADD YOUR LINKS HERE — just fill in the name and href fields
+// ADD YOUR LINKS HERE — just fill in the name and href fields
 const links = [
-  { name: "UP ACM Google Drive", href: "#", category: "Internal" },
-  { name: "PR Committee Email", href: "#", category: "Internal" },
-  { name: "Partnership Tracking Sheet", href: "#", category: "Internal" },
-  { name: "UP ACM Official Website", href: "#", category: "External" },
-  { name: "ACM International", href: "https://www.acm.org", category: "External" },
-  { name: "Placeholder Link", href: "#", category: "External" },
+  { name: "UP Organization/ACM Database (from Algolympics 2026", href: "https://docs.google.com/spreadsheets/d/11o-xm0rYKJhYyC_sS9zKPszZQyWwDWr29MZrp3AStxE/edit?usp=sharing", category: "Internal" },
+  { name: "UP Organization Update Form", href: "https://docs.google.com/forms/d/1iN64TvzmaxMVOH806Hh6MCgtaJz0cxBkt3HHV2VIa2o/edit", category: "Internal" },
+  { name: "ACM Local Chapter Update Form", href: "https://docs.google.com/forms/d/1F05rbI-F7kZry3gIz8PAcrVd24_gFYvnN5-hObjIzto/edit?usp=sharing", category: "Internal" },
+  { name: "PubRel Email Account and Algolympics Account", href: "https://docs.google.com/spreadsheets/d/1xWWqMws1mnrZTlZjGNV5M33xgtS7Bp0Mfi_3WmuTiP4/edit?usp=sharing", category: "Internal" },
+  { name: "Alumni Database (not updated)", href: "https://docs.google.com/spreadsheets/d/1RTcF1N8k0hwzfvs8oM8SsbEiNsACKS49/edit#gid=1357393708 ", category: "Internal" },
+  { name: "Media Database", href: "https://drive.google.com/file/d/1mna-aqARrQ5W6NfvHLhJlnkaDQ-H-Mk_/view?usp=sharing ", category: "Internal" },
+  { name: "1819 Events Tracker (for basis)", href: "https://docs.google.com/spreadsheets/d/1vWsoz9Fy2nvKtAgZKnmTxyZVxBAJnARYKPG7u4tsB6E/edit#gid=2063321004 ", category: "Internal" },
+  { name: "UP ACM PubRel Github Account", href: "https://github.com/upacm-public-relations", category: "Internal" },
 ];
 
 const categoryColor = (cat: string) => {
@@ -27,14 +29,14 @@ export default function RelevantLinksPage() {
           { label: "Relevant Links" },
         ]}
         title="Relevant Links"
-        description="Quick reference table of important links and resources for PR Committee work"
+        description="Quick reference table of important links and resources for PubRel Committee work"
       />
 
-      <Callout type="info" title="Adding Links" className="mb-6">
+      {/* <Callout type="info" title="Adding Links" className="mb-6">
         To add or update links, edit the <code style={{ fontFamily: "monospace" }}>links</code> array in{" "}
         <code style={{ fontFamily: "monospace" }}>app/(docs)/resources/links/page.tsx</code>.
         Categories: Internal, External.
-      </Callout>
+      </Callout> */}
 
       <div
         className="rounded-xl overflow-hidden"

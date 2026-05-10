@@ -5,22 +5,10 @@ import { Mail } from "lucide-react";
 // ✏️ ADD YOUR CONTACTS HERE
 const contacts = [
   {
-    name: "Placeholder Name",
-    role: "PR Committee Head (2425)",
-    email: "placeholder@example.com",
-    notes: "Add contact details and context here",
-  },
-  {
-    name: "Placeholder Name",
-    role: "Executive Vice President",
-    email: "placeholder@example.com",
-    notes: "Add contact details and context here",
-  },
-  {
-    name: "Placeholder Name",
-    role: "ACM Faculty Adviser",
-    email: "placeholder@example.com",
-    notes: "Add contact details and context here",
+    name: "John Harry Arciga",
+    role: "PubRel Committee Head (2526)",
+    email: "jaarciga@up.edu.ph / harryarciga.work@gmail.com",
+    notes: "You may contact me for clarifications in this documentation.",
   },
 ];
 
@@ -34,13 +22,13 @@ export default function ContactsPage() {
           { label: "Contacts Directory" },
         ]}
         title="Contacts Directory"
-        description="Key contacts for the PR Committee and related stakeholders"
+        description="Key contact/s for the PubRel Committee"
       />
 
-      <Callout type="info" title="Adding Contacts" className="mb-6">
+      {/* <Callout type="info" title="Adding Contacts" className="mb-6">
         Edit the <code style={{ fontFamily: "monospace" }}>contacts</code> array in{" "}
         <code style={{ fontFamily: "monospace" }}>app/(docs)/resources/contacts/page.tsx</code> to add real contacts.
-      </Callout>
+      </Callout> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {contacts.map((c, i) => (

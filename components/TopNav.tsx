@@ -61,8 +61,8 @@ export function TopNav({ onMenuClick }: TopNavProps) {
 
         {/* Right Actions */}
         <div className="flex items-center gap-1">
-          <a
-            href="#"
+          {/* <a
+            href="https://drive.google.com/drive"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors hover:opacity-80"
@@ -72,7 +72,7 @@ export function TopNav({ onMenuClick }: TopNavProps) {
             <ExternalLink className="h-3 w-3" />
           </a>
           <a
-            href="#"
+            href="public_relations@upacm.net"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors hover:opacity-80"
@@ -80,7 +80,7 @@ export function TopNav({ onMenuClick }: TopNavProps) {
           >
             Email
             <ExternalLink className="h-3 w-3" />
-          </a>
+          </a> */}
 
           <div
             className="mx-1 h-5 w-px hidden md:block"
