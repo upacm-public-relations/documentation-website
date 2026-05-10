@@ -4,24 +4,24 @@ import { Callout } from "@/components/doc-components/Callout";
 
 // TODO: Replace with actual backlog items
 const backlogs = [
+  // {
+  //   title: "Placeholder backlog item 1",
+  //   status: "backlog" as const,
+  //   priority: "High",
+  //   notes: "Add description and context here",
+  // },
   {
-    title: "Placeholder backlog item 1",
-    status: "backlog" as const,
-    priority: "High",
-    notes: "Add description and context here",
-  },
-  {
-    title: "Placeholder backlog item 2",
+    title: "Accomplish benefits of Algolympics 2026 Org Partners",
     status: "in-progress" as const,
     priority: "Medium",
-    notes: "Add description and context here",
+    notes: "As of May 11, 2026, there are still 10 orgs with their benefits not yet completed. You may carry these tasks on your term OR ghost them (not recommended - since out of respect na rin na partner natin sila).",
   },
-  {
-    title: "Placeholder backlog item 3",
-    status: "needs-improvement" as const,
-    priority: "Low",
-    notes: "Add description and context here",
-  },
+  // {
+  //   title: "Placeholder backlog item 3",
+  //   status: "needs-improvement" as const,
+  //   priority: "Low",
+  //   notes: "Add description and context here",
+  // },
 ];
 
 export default function BacklogsPage() {
@@ -31,15 +31,14 @@ export default function BacklogsPage() {
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Institutional Knowledge" },
-          { label: "Backlogs (PubRel 2025)" },
+          { label: "Backlogs (PubRel 2026)" },
         ]}
-        title="Backlogs (PubRel 2025)"
-        description="Unfinished items and pending tasks from the 2025 PR Committee batch"
+        title="Backlogs (PubRel 2026-2027)"
+        description="Unfinished items and pending tasks from the 2025-2026 PubRel Committee"
       />
 
-      <Callout type="warning" title="For Incoming PR Heads" className="mb-8">
-        These are items that were not completed during AY 2024–2025 and may need to be picked up,
-        deprioritized, or formally closed. Review each item and decide its fate.
+      <Callout type="warning" title="For Incoming PubRel Head/s" className="mb-8">
+        These are items that were not completed during AY 2025–2026 and may need to be formally closed.
       </Callout>
 
       <div className="space-y-4">
@@ -75,13 +74,13 @@ export default function BacklogsPage() {
         ))}
       </div>
 
-      <div
+      {/* <div
         className="mt-6 rounded-xl p-5 text-sm"
         style={{ background: "var(--secondary)", color: "var(--muted-foreground)" }}
       >
         ✏️ Edit the <code className="px-1 rounded text-xs" style={{ fontFamily: "monospace", background: "var(--border)" }}>backlogs</code> array in{" "}
         <code className="px-1 rounded text-xs" style={{ fontFamily: "monospace", background: "var(--border)" }}>app/(docs)/knowledge/backlogs/page.tsx</code> to add real backlog items.
-      </div>
+      </div> */}
     </div>
   );
 }

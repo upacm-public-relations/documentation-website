@@ -8,7 +8,15 @@ const swotQuadrants = [
     bg: "rgba(34,197,94,0.07)",
     border: "rgba(34,197,94,0.2)",
     placeholder:
-      "Add your committee's strengths here.\n\nExamples:\n• Strong existing partner relationships\n• Experienced team with automation skills\n• Clear documentation systems in place",
+      `• Secured partnerships with other ACM student chapters and organizations within and outside of the university
+      \n• Disseminated information regarding opportunities to the members
+      \n• We had enough (?) members to delegate tasks for partnership responsibilities and internal events
+      \n• Was able to properly distribute PubRel workload
+      \n• Created a member database to know which members are willing to help in promotions for organization partners
+      \n• Onboarded team members at the start of each semester
+      \n• Algolympics 2026 garnered 16 org partners (vs. 7 org partners last year)
+      \n• Creation of internal tools to automate processes like email blast, etc.
+      \n• Utilized email labels & templates, as well as arranging PubRel Gmails by prioritizing Starred first`,
   },
   {
     label: "Weaknesses",
@@ -17,7 +25,10 @@ const swotQuadrants = [
     bg: "rgba(220,38,38,0.06)",
     border: "rgba(220,38,38,0.18)",
     placeholder:
-      "Add your committee's weaknesses here.\n\nExamples:\n• Limited manpower during peak event season\n• Turnover gaps in institutional knowledge\n• Dependency on specific tools or platforms",
+      `Main weakness: accepting partnership proposals that are not feasible due to limited manpower/inactive members. 
+      \n• Exhibit A: Our responsibilities for UP Circuit for SQUEEZE were not completed (I personally ghosted them huhu) since we accepted their proposal without considering the amount of pubmats (5) needed to be shared in UP ACM's FB Page.
+      \n• Exhibit B: We terminated our contract with UP CAPES for Mixer & JobFair since we weren't able to complete almost ALL of our responsibilities including DP blasts, Resume Submission, Onsite Attendees, etc
+      \nFor future purposes, nasa PubRel Gem instructions naman na yung criteria na ginawa ko for choosing proposals to accept or not.`,
   },
   {
     label: "Opportunities",
@@ -26,7 +37,11 @@ const swotQuadrants = [
     bg: "rgba(45,156,219,0.07)",
     border: "rgba(45,156,219,0.2)",
     placeholder:
-      "Add your committee's opportunities here.\n\nExamples:\n• Expanding ACM chapter partnerships\n• Leveraging new AI tools for automation\n• Growing interest from tech companies in UP students",
+      `• More partnerships pa siguro with other ACM Local Chapters and maybe International Chapters (may group chat na afaik for some local chapters - ask Leevan na lang if ever pero try to expand pa yung group chat) 
+      \n• Continue to partner with ASES Manila - note na medyo sensitive sila sa quantitative responsibilities (ayaw nila yung may bilang ung likes and shares).
+      \n• Partner again with UP CAPES - but this time, negotiate for a MUCH MUCH MUCH lower # of responsibilities.
+      \n• Accept more org partnerships like the one with UP SHARP x UNIQLO.
+      \n• Update the Alumni Database to be used for partnerships and help in future events`,
   },
   {
     label: "Threats",
@@ -35,7 +50,9 @@ const swotQuadrants = [
     bg: "rgba(217,119,6,0.07)",
     border: "rgba(217,119,6,0.2)",
     placeholder:
-      "Add your committee's threats here.\n\nExamples:\n• Partner disengagement due to slow responses\n• Budget constraints from parent organization\n• Loss of key relationships after officer transitions",
+      `• Academic backlogs and priority management
+      \n• Lack of communication and delegation
+      \n• Lack of manpower to finish org partnership responsibilities`,
   },
 ];
 
@@ -49,7 +66,7 @@ export default function SWOTPage() {
           { label: "SWOT Analysis" },
         ]}
         title="SWOT Analysis"
-        description="Strengths, Weaknesses, Opportunities, and Threats for the PR Committee"
+        description="Strengths, Weaknesses, Opportunities, and Threats for the PubRel Committee"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -85,14 +102,14 @@ export default function SWOTPage() {
               </p>
             </div>
 
-            <p className="text-xs mt-3 italic" style={{ color: q.color, opacity: 0.7 }}>
+            {/* <p className="text-xs mt-3 italic" style={{ color: q.color, opacity: 0.7 }}>
               ✏️ Replace the placeholder text with your actual {q.label.toLowerCase()} analysis
-            </p>
+            </p> */}
           </div>
         ))}
       </div>
 
-      <div
+      {/* <div
         className="mt-8 rounded-xl p-5 text-sm"
         style={{ background: "var(--secondary)", color: "var(--muted-foreground)" }}
       >
@@ -105,7 +122,7 @@ export default function SWOTPage() {
         </code>{" "}
         and replace the <code className="px-1 py-0.5 rounded text-xs" style={{ background: "var(--border)", fontFamily: "'DM Mono', monospace" }}>placeholder</code> values in the{" "}
         <code className="px-1 py-0.5 rounded text-xs" style={{ background: "var(--border)", fontFamily: "'DM Mono', monospace" }}>swotQuadrants</code> array with your actual analysis.
-      </div>
+      </div> */}
     </div>
   );
 }

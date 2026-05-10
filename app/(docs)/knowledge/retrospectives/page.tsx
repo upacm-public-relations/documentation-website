@@ -186,6 +186,7 @@ export default function RetrospectivesPage() {
                   </div>
                 </div>
               </li>
+              <li><strong>Less org partnerships on 1st sem (unless siguro may Easy As Py) then buhos na lahat ng effort for Algolympics 2026</strong></li>
             </ul>
           </div>
         </div>
