@@ -72,7 +72,11 @@ export function HomePage() {
             className="h-16 w-16 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg"
             style={{ background: "#0B1F3B" }}
           >
-            PR
+            <img
+                src="/logo.svg"
+                alt="UP ACM Logo"
+                className="h-10 w-10 object-contain"
+              />
           </div>
           <div>
             <h1 className="text-4xl font-bold tracking-tight" style={{ color: "var(--foreground)" }}>

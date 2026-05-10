@@ -15,11 +15,11 @@ export default function RetrospectivesPage() {
         ]}
         title="Retrospectives (2526)"
         description="End-of-year reflections and lessons learned from AY 2025–2026"
-        badge={<StatusBadge status="completed" />}
+        // badge={<StatusBadge status="completed" />}
       />
 
       <div className="space-y-6">
-        <Callout type="info" title="For Incoming PR Heads">
+        <Callout type="info" title="For Incoming PubRel Head/s">
           Reading these retrospectives is one of the most valuable things you can do when onboarding.
           They contain honest assessments of what worked, what didn&apos;t, and specific recommendations
           for the next term.

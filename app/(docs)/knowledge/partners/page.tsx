@@ -4,19 +4,24 @@ import { Callout } from "@/components/doc-components/Callout";
 // ✏️ ADD YOUR CHAPTER DATA HERE
 const chapters = [
   {
-    localChapter: "ACM — [Chapter Name]",
+    localChapter: "Association for Computing Machinery- FEU Institute of Technology Student Chapter",
     status: "Active",
-    pointOfContact: "Name / Email",
+    pointOfContact: "Csypres Ornos",
   },
   {
-    localChapter: "ACM — [Chapter Name]",
-    status: "Inactive",
-    pointOfContact: "Name / Email",
+    localChapter: "Association for Computing Machinery - Mapua Student Chapter",
+    status: "Active",
+    pointOfContact: "Caine Panzo",
   },
   {
-    localChapter: "ACM — [Chapter Name]",
-    status: "Pending",
-    pointOfContact: "Name / Email",
+    localChapter: "T.I.P. Association for Computing Machinery Student Chapter",
+    status: "Active",
+    pointOfContact: "Germiah Palma",
+  },
+  {
+    localChapter: "De La Salle University Association for Computing Machinery Student Chapter",
+    status: "Active",
+    pointOfContact: "Kailu Baradas",
   },
 ];
 
@@ -45,19 +50,16 @@ export default function PartnersPage() {
           style={{ background: "var(--card)", border: "1px solid var(--border)", color: "var(--foreground)" }}
         >
           <p>
-            This page tracks UP ACM&apos;s relationships with other ACM local chapters across the Philippines
-            and internationally. These partnerships facilitate joint events, knowledge exchange, and collaborative
+            This page tracks UP ACM&apos;s relationships with other ACM local chapters across the Philippines. These partnerships facilitate joint events, knowledge exchange, and collaborative
             initiatives between chapters.
           </p>
-          <p className="mt-2 italic" style={{ color: "var(--muted-foreground)" }}>
+          {/* <p className="mt-2 italic" style={{ color: "var(--muted-foreground)" }}>
             Placeholder — Add more context about how chapter partnerships work and the history of these relationships.
-          </p>
+          </p> */}
         </div>
 
-        <Callout type="info" title="Updating this table">
-          To add or update chapter relationships, edit the <code style={{ fontFamily: "monospace" }}>chapters</code> array
-          in <code style={{ fontFamily: "monospace" }}>app/(docs)/knowledge/partners/page.tsx</code>.
-          Status options: Active, Inactive, Pending.
+        <Callout type="info" title="Note:">
+          Some of these contacts are not up to date. You may send the ACM Local Chapter Database Update Form (please see GDrive for the template used last year).
         </Callout>
 
         {/* Table */}
