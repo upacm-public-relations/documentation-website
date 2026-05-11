@@ -40,9 +40,10 @@ const navItems: NavItem[] = [
         title: "Projects (Automation and Website)",
         icon: Zap,
         items: [
-          { title: "Gemini Add-on Project", href: "/operations/automation/gemini" },
-          { title: "Proposal Reviewer System", href: "/operations/automation/proposal-reviewer" },
-          { title: "Partnership Response Automation", href: "/operations/automation/partnership-response" },
+          { title: "Gemini-Integrated GMail Add-On", href: "/operations/automation/gemini" },
+          { title: "Proposal Reviewer Gem", href: "/operations/automation/proposal-reviewer" },
+          { title: "Partnership Reject Automation", href: "/operations/automation/partnership-response" },
+          { title: "Send To All Automation", href: "/operations/automation/send-to-all" },
           { title: "Email Blast System", href: "/operations/automation/email-blast" },
           { title: "Documentation Website", href: "/operations/automation/documentation-website" },
         ],
