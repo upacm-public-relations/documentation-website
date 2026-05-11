@@ -45,6 +45,7 @@ const navItems: NavItem[] = [
           { title: "Partnership Reject Automation", href: "/operations/automation/partnership-response" },
           { title: "Send To All Automation", href: "/operations/automation/send-to-all" },
           { title: "Email Blast System", href: "/operations/automation/email-blast" },
+          { title: "PubRel Quiz Web App (for Committee Immersion)", href: "/operations/automation/pubrel-quiz-web-app" },
           { title: "Documentation Website", href: "/operations/automation/documentation-website" },
         ],
       },
