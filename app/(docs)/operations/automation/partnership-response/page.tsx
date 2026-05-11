@@ -12,7 +12,7 @@ export default function Page() {
           { label: "Partnership Reject Automation" },
         ]}
         title="Partnership Reject Automation"
-        description="Automated system for drafting and sending partnership reject responses using GMail labels"
+        description="Automated system for sending partnership reject responses using GMail labels"
       />
       <div className="space-y-6">
         <Callout type="info" title="About this project">
